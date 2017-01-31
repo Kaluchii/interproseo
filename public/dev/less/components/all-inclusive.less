@@ -1,0 +1,46 @@
+.all-inclusive{
+  max-width: 1200px;
+  &__block-title{}
+  &__advantages-list{
+    margin-top: 90px;
+  }
+  &__interview{
+    background: url(../img/interview.png) no-repeat ~'calc(50% - 110px)' top;
+    padding-top: 90px;
+    padding-right: 180px;
+    font-family: RotondaBold;
+    font-size:24px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.4em;
+    text-align: center;
+    color: @gray-1;
+  }
+}
+
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  &__advantages-item{
+    padding-right:50px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+  }
+}
+.advantages-item{
+  list-style-type: none;
+  width: 30%;
+  margin-right: 15px;
+  &__title{
+    font-family: "Arial",sans-serif;
+    font-weight: bold;
+    color: @gray-1;
+    font-size:16px;
+  }
+  &__description{
+    color: @gray-2;
+    line-height: 1.5em;
+    font-size:16px;
+    font-family: "Arial",sans-serif;
+  }
+}
