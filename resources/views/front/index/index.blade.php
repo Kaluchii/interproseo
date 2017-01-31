@@ -148,41 +148,35 @@
             <h2 class="in-cost__block-title block-title block-title--white block-title--over">Что входит в стоимость</h2>
             <div class="in-cost__package package">
                 <ul class="package__in-cost-list in-cost-list">
-                    <li class="in-cost-list__item advantages-item">
-                        <img src="/" alt="" class="advantages-item__icon">
-                        <p class="advantages-item__title--blue">Безопасность</p>
-                        <p class="advantages-item__description">Сайт использует современные протоколы безопасности. Это
-                            защищает магазин от взлома и спама.</p>
+                    <li class="in-cost-list__item advantages-item advantages-item--cost">
+                        <img src="/img/p6.jpg" alt="" class="advantages-item__icon">
+                        <p class="advantages-item__title advantages-item__title--blue">Рабочее предложение</p>
+                        <p class="advantages-item__description">Мы подготовим анализ конкурентов и существующих сайтов. Это поможет понять, какой подход сработает лучше.</p>
                     </li>
                     <li class="in-cost-list__item advantages-item">
-                        <img src="/" alt="" class="advantages-item__icon">
-                        <p class="advantages-item__title--blue">Безопасность</p>
-                        <p class="advantages-item__description">Сайт использует современные протоколы безопасности. Это
-                            защищает магазин от взлома и спама.</p>
+                        <img src="/img/p2.jpg" alt="" class="advantages-item__icon">
+                        <p class="advantages-item__title advantages-item__title--blue">Анализ аудитории</p>
+                        <p class="advantages-item__description">Изучим, как и где люди ищут продукт, какую потребность хотят решить, что влияет на их решение о покупке.</p>
                     </li>
                     <li class="in-cost-list__item advantages-item">
-                        <img src="/" alt="" class="advantages-item__icon">
-                        <p class="advantages-item__title--blue">Безопасность</p>
-                        <p class="advantages-item__description">Сайт использует современные протоколы безопасности. Это
-                            защищает магазин от взлома и спама.</p>
+                        <img src="/img/p3.jpg" alt="" class="advantages-item__icon">
+                        <p class="advantages-item__title advantages-item__title--blue">Торговое предложение</p>
+                        <p class="advantages-item__description">Мы разберем приоритеты покупателя и подготовим торговое предложение, которое поможет продавать лучше.</p>
                     </li>
                     <li class="in-cost-list__item advantages-item">
-                        <img src="/" alt="" class="advantages-item__icon">
-                        <p class="advantages-item__title--blue">Безопасность</p>
-                        <p class="advantages-item__description">Сайт использует современные протоколы безопасности. Это
-                            защищает магазин от взлома и спама.</p>
+                        <img src="/img/p1.jpg" alt="" class="advantages-item__icon">
+                        <p class="advantages-item__title advantages-item__title--blue">Оформление почтовых рассылок</p>
+                        <p class="advantages-item__description">62% повторных продаж приходится на почтовые рассылки. Мы оформим письмо и запустим первую рассылку.</p>
                     </li>
                     <li class="in-cost-list__item advantages-item">
-                        <img src="/" alt="" class="advantages-item__icon">
-                        <p class="advantages-item__title--blue">Безопасность</p>
-                        <p class="advantages-item__description">Сайт использует современные протоколы безопасности. Это
-                            защищает магазин от взлома и спама.</p>
+                        <img src="/img/p4.jpg" alt="" class="advantages-item__icon">
+                        <p class="advantages-item__title advantages-item__title--blue">Адаптация материалов</p>
+                        <p class="advantages-item__description">Подготовим к публикации текст и фотографии, поможем провести фотосессию.</p>
                     </li>
                     <li class="in-cost-list__item advantages-item">
-                        <img src="/" alt="" class="advantages-item__icon">
-                        <p class="advantages-item__title--blue">Безопасность</p>
-                        <p class="advantages-item__description">Сайт использует современные протоколы безопасности. Это
-                            защищает магазин от взлома и спама.</p>
+                        <img src="/img/p5.jpg" alt="" class="advantages-item__icon">
+                        <p class="advantages-item__title advantages-item__title--blue">Оформление и дизайн</p>
+                        <p class="advantages-item__description">Оформим интерфейс, нарисуем иллюстрации, подготовим баннеры специальных предложений.</p>
                     </li>
                 </ul>
             </div>
