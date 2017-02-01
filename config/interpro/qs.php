@@ -2,55 +2,67 @@
 
 return [
 
-    'block_birds' => [
-        'string' => [
-            'descr'
-        ],
+    'static_all_site' => [
+        'string' => ['phone'],
+        'text'   => ['metrik_script', 'metrik_noscript']
+    ],
 
+    'offer' => [
+        'string' => ['offer_case_title1', 'offer_case_title2'],
+        'text' => ['offer_about', 'offer_case_desc1', 'offer_case_desc2']
+    ],
+
+    'quick_start' => [
+        'image' => ['for_example'],
+        'text' => ['example'],
         'groups' => [
-            'group_bird_type' => [
-                'string' => [
-                    'descr'
-                ],
-                'group_bird_class' => [
-                    'example'
-                ],
+            'text_adv' => [
+                'string' => ['adv_title'],
+                'text' => ['descr'],
             ],
-            'group_bird_class' => [
-                'string' => [
-                    'descr'
-                ],
-                'image' => [
-                    'foto'
-                ],
-                'group_bird_type' => [
-                    'superior'
-                ]
+            'adv_on_check' => [
+                'image' => ['adv'],
+                'text' => ['descr'],
             ],
-            'group_bird_area' => [
-                'group_area' => [
-                    'area'
-                ],
-                'group_bird_type' => [
-                    'superior'
-                ]
-            ]
         ]
     ],
 
-    'block_areas' => [
-        'string' => [
-            'descr'
-        ],
-
+    'clients_block' => [
         'groups' => [
-            'group_area' => [
-                'string' => [
-                    'descr'
-                ]
-            ]
+            'clients' => [
+                'image' => ['client_logo'],
+                'string' => ['descr'],
+            ],
         ]
+    ],
 
-    ]
+    'all_inclusive' => [
+        'groups' => [
+            'advantages' => [
+                'string' => ['adv_title'],
+                'text' => ['descr'],
+            ],
+        ]
+    ],
 
+    'in_cost' => [
+        'groups' => [
+            'works' => [
+                'image' => ['work'],
+                'string' => ['work_title'],
+                'text' => ['descr'],
+            ],
+        ]
+    ],
+
+    'shops' => [
+        'text' => ['descr'],
+        'groups' => [
+            'shops_variant' => [
+                'image' => ['figure'],
+                'string' => ['cost_with', 'cost_without', 'special_condition'],
+                'text' => ['descr'],
+            ],
+        ]
+    ],
 ];

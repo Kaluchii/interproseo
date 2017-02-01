@@ -8,23 +8,33 @@
                 </a>
             </li>
             <li>
-                <a href="/adm/advantages">
-                    <i class="fa  fa-check-square"></i> <span>Преимущества</span>
+                <a href="/adm/offers">
+                    <i class="fa fa-globe"></i> <span>Предложения</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/about">
-                    <i class="fa  fa-file-text-o"></i> <span>О компании</span>
+                <a href="/adm/quick">
+                    <i class="fa fa-globe"></i> <span>Быстрый старт</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/slider">
-                    <i class="fa fa-image"></i> <span>Слайдер</span>
+                <a href="/adm/among">
+                    <i class="fa fa-globe"></i> <span>Среди клиентов</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/certs">
-                    <i class="fa   fa-star-o"></i> <span>Сертификаты</span>
+                <a href="/adm/all_inclusive">
+                    <i class="fa fa-globe"></i> <span>Все включено</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/in_cost">
+                    <i class="fa fa-globe"></i> <span>Что входит в стоимость</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/shops">
+                    <i class="fa fa-globe"></i> <span>Магазины на любой вкус</span>
                 </a>
             </li>
             <li>

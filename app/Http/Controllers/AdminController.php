@@ -12,9 +12,67 @@ class AdminController extends Controller
     private $extract;
     public function __construct(ExtractAgent $ext){
         $this->extract = $ext;
+        $this->extract->tuneSelection('text_adv')->sortBy('id','DESC');
+        $this->extract->tuneSelection('adv_on_check')->sortBy('id','DESC');
     }
 
     public function getIndex(){
         return view('back.layout');
+    }
+
+    public function getAll(){
+        $static_all_site = $this->extract->getBlock('static_all_site');
+        return view('back.blocks.static_all_site',[
+            'static_all_site' => $static_all_site
+        ]);
+    }
+
+    public function getOffers(){
+        $offer = $this->extract->getBlock('offer');
+        return view('back.blocks.offer',[
+            'offer' => $offer
+        ]);
+    }
+
+    public function getQuick(){
+        $quick_start = $this->extract->getBlock('quick_start');
+        return view('back.blocks.quick_start',[
+            'quick_start' => $quick_start
+        ]);
+    }
+
+    public function getAmong(){
+        $clients_block = $this->extract->getBlock('clients_block');
+        return view('back.blocks.clients_block',[
+            'clients_block' => $clients_block
+        ]);
+    }
+
+    public function getAllInclusive(){
+        $all_inclusive = $this->extract->getBlock('all_inclusive');
+        return view('back.blocks.all_inclusive',[
+            'all_inclusive' => $all_inclusive
+        ]);
+    }
+
+    public function getInCost(){
+        $in_cost = $this->extract->getBlock('in_cost');
+        return view('back.blocks.in_cost',[
+            'in_cost' => $in_cost
+        ]);
+    }
+
+    public function getShops(){
+        $shops = $this->extract->getBlock('shops');
+        return view('back.blocks.shops',[
+            'shops' => $shops
+        ]);
+    }
+
+    public function getSeo(){
+        $seo = $this->extract->getBlock('static_all_site');
+        return view('back.blocks.seo', [
+            'seo' => $seo
+        ]);
     }
 }

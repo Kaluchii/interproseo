@@ -17,7 +17,23 @@ Route::get('/', 'FrontController@getIndex');
 Route::auth();
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
 
-    Route::get('/',         'AdminController@getIndex');
+    Route::get('/',                     'AdminController@getIndex');
+    Route::get('/all',                  'AdminController@getAll');
+    Route::get('/offers',               'AdminController@getOffers');
+    Route::get('/quick',                'AdminController@getQuick');
+    Route::get('/among',                'AdminController@getAmong');
+    Route::get('/all_inclusive',        'AdminController@getAllInclusive');
+    Route::get('/in_cost',              'AdminController@getInCost');
+    Route::get('/shops',                'AdminController@getShops');
+
+    Route::get('/seo',         'AdminController@getSeo');
+
+
+
+
+
+
+
     // Таксаномия проекта. Визуальная зависимость данных.
     Route::get('/taxonomy', 'Back\TaxonomyController@showTaxonomy');
 
