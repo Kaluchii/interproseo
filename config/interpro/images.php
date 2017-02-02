@@ -2,19 +2,19 @@
 
 return [
 
-    'modimages.wmimage' => [
-        'resizes' => ['res100x100', 'res400'],
-        'crops' => ['crop400x300']
+    'quick_start.for_example'=> [
+        'resizes' => ['preview']
     ],
-
-    'modimages.maskimage' => [
-        'resizes' => ['res100x100', 'res400'],
-        'crops' => ['crop400x300']
+    'adv_on_check.for_example'=> [
+        'resizes' => ['adv']
     ],
-
-    'group_bird_class.foto' => [
-        'resizes' => ['res100x100', 'res400', 'res800', 'res1000'],
-        'crops' => ['crop800x600']
-    ]
-
+    'clients.client_logo'=> [
+        'resizes' => ['preview']
+    ],
+    'works.work'=> [
+        'resizes' => ['preview']
+    ],
+    'shops_variant.figure'=> [
+        'resizes' => ['preview']
+    ],
 ];

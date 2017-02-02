@@ -6,7 +6,7 @@
     <div class="box box box-info">
 
         <div class="box-header with-border">
-            <h3 class="box-title">Статичные поля страницы</h3>
+            <h3 class="box-title">Поля блока</h3>
         </div>
 
     </div>
