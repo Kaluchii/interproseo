@@ -1,19 +1,63 @@
 .quick-start{
   padding-top: 80px;
   &__table{}
+  &__referat{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.referat{
+  overflow: hidden;
+  &:hover{
+    .referat__icon{
+    transform: translateY(0px);
+    transition: all 1s ease;
+    }
+  }
+  &__icon{
+    position: relative;
+    transform: translateY(20px);
+    transition: all 1s ease;
+  }
+  &__text{
+    padding-left: 25px;
+    font-family: @Arial;
+    font-size:18px;
+    color: @gray-1;
+  }
 }
 
 .table{
-  background: url('../img/check.png') no-repeat 673px 25px, url(../img/line.png) repeat-y 696px 50px;
-  &__row{
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  &__column{
+
+  }
+  &__pen{
+    position: absolute;
+    display: block;
+    background: url(../img/pen.png) no-repeat;
+    width: 157px;
+    height: 387px;
+    top: 160px;
+    left: 280px;
+  }
+}
+
+.column{
+  &--printer{
+    background: url(../img/printer.jpg) no-repeat 0 10px;
+    position: relative;
+  }
+  &__block-title{
+    padding-bottom: 60px;
   }
 }
 
 
 .row{
-  display: flex;
-  justify-content: space-between;
+
   &__block-title{
 
   }
@@ -24,24 +68,30 @@
     height: 36px;
   }
   &__column-text{}
-  &__column-check{
-    margin-right: 180px;
-  }
 }
-
+.printer{
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  //margin-right: 170px;
+  width: 374px;
+  height: 30px;
+}
 .column-check{
   max-width: 320px;
-  background: #f3f3f3;
   width: 100%;
-  padding:0 20px;
+  margin: 70px 0 70px 0;
+  margin-left: 23px;
+  padding:0 30px;
   box-sizing: border-box;
   position: relative;
   top:-20px;
   &__icon{}
   &__description{
+    margin-left: 10px;
     padding-right: 40px;
     font-size:14px;
-    font-family: "Arial",sans-serif;
+    font-family: @Arial;
     line-height: 1.5em;
     color: @gray-2;
   }

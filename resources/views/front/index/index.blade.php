@@ -38,49 +38,42 @@
     <div class="wrap-1200">
         <div class="wrap-1200__quick-start quick-start">
             <div class="quick-start__table table">
-                <div class="table__row row">
-                    <div class="row__block-title">
-                        <h2 class="block-title">Быстрый старт</h2>
+                <div class="table__column column">
+                    <h2 class="column__block-title block-title">Быстрый старт</h2>
+                    <div class="offer-case offer-case--no-pad">
+                        <p class="offer-case__title">Система готова</p>
+                        <p class="offer-case__description offer-case__description--small-space">Вы не потратите лишних денег и времени на разработку сайта с нуля. Все модули готовы, протестированы и стабильно работают: покупатель не уйдет, из-то того, что магазин завис, а в корзине невозможно отредактировать заказ.</p>
                     </div>
-                    <div class="row__check-printer"></div>
+                    <div class="offer-case offer-case--no-pad">
+                        <p class="offer-case__title">Легко развивается</p>
+                        <p class="offer-case__description offer-case__description--small-space">Даже базовуюверсию интернет-магазина можно превратить в космический шаттл: подключается 1С и система учета клиентов, автоматическая статистика и аналитика.</p>
+                    </div>
+                    <div class="offer-case offer-case--no-pad">
+                        <p class="offer-case__title">Хорошо выглядит</p>
+                        <p class="offer-case__description offer-case__description--small-space">В разработке дизайна мы учтем особенности магазина и подготовим красивый, удобный интерфейс. Мы изучаем маркетинг и опыт действующих магазинов, чтобы использовать проверенные дизайн-решения.</p>
+                    </div>
                 </div>
-                <div class="table__row row">
-                    <div class="row__column-text">
-                        <div class="offer-case offer-case--no-pad">
-                            <p class="offer-case__title">Система готова</p>
-                            <p class="offer-case__description offer-case__description--small-space">Вы не потратите лишних денег и времени на разработку сайта с нуля. Все модули готовы, протестированы и стабильно работают: покупатель не уйдет, из-то того, что магазин завис, а в корзине невозможно отредактировать заказ.</p>
-                        </div>
-                    </div>
-                    <div class="row__column-check column-check">
-                        <img src="/img/3.jpg" alt="" class="column-check__icon">
+                <div class="table__column column column--printer">
+                    <div class="printer"></div>
+                    <div class=" column-check">
+                        <img src="/img/1.png" alt="" class="column-check__icon">
                         <p class="column-check__description">Запуск полнофункционального магазина займет от 18 до 36
                             рабочих дней.</p>
                     </div>
-                </div>
-                <div class="table__row row">
-                    <div class="row__column-text">
-                        <div class="offer-case offer-case--no-pad">
-                            <p class="offer-case__title">Легко развивается</p>
-                            <p class="offer-case__description offer-case__description--small-space">Даже базовуюверсию интернет-магазина можно превратить в космический шаттл: подключается 1С и система учета клиентов, автоматическая статистика и аналитика.</p>
-                        </div>
-                    </div>
-                    <div class="row__column-check column-check">
-                        <img src="/img/2.jpg" alt="" class="column-check__icon">
+                    <div class=" column-check">
+                        <img src="/img/2.png" alt="" class="column-check__icon">
                         <p class="column-check__description">Платежные системы, СЕО, импорт и экспорт ассортимента уже предусмотрены.</p>
                     </div>
-                </div>
-                <div class="table__row row">
-                    <div class="row__column-text ">
-                        <div class="offer-case offer-case--no-pad">
-                            <p class="offer-case__title">Хорошо выглядит</p>
-                            <p class="offer-case__description offer-case__description--small-space">В разработке дизайна мы учтем особенности магазина и подготовим красивый, удобный интерфейс. Мы изучаем маркетинг и опыт действующих магазинов, чтобы использовать проверенные дизайн-решения.</p>
-                        </div>
-                    </div>
-                    <div class="row__column-check column-check">
-                        <img src="/img/1.jpg" alt="" class="column-check__icon">
+                    <div class=" column-check">
+                        <img src="/img/3.png" alt="" class="column-check__icon">
                         <p class="column-check__description">Покупатель не запутается на сайте, а оформление не затеряется среди конкурентов.</p>
                     </div>
+                    <div class="table__pen"></div>
                 </div>
+            </div>
+            <div class="quick-start__referat referat">
+                <img src="/img/referat.png" alt="" class="referat__icon">
+                <p class="referat__text">Например, наш <a href="#" class="link">реферат по интернет-магазинам мебели эконом-класса.</a></p>
             </div>
         </div>
     </div>
@@ -180,6 +173,46 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <div class="wrap-1200">
+        <div class="wrap-1200__cost cost">
+            <div class="cost__block-title block-title">Магазины на любой вкус</div>
+            <p class="cost__description">Подготовим инструкцию для сотрудников и предоставим <span class="yellow-back">бесплатную поддержку</span> на 3 месяца. На сайт действует пожизненная гарантия.</p>
+            <ul class="cost__offers-cost offers-cost">
+               <li class="offers-cost__tarif tarif tarif--package">
+                   <p class="tarif__name">Базовый</p>
+                   <ul class="tarif__services">
+                       <li class="tarif__services-item">Дизайн шаблон</li>
+                       <li class="tarif__services-item">Полный функционал</li>
+                       <li class="tarif__services-item">Контекстная реклама</li>
+                   </ul>
+                   <p class="tarif__cost-row">740 000 тг</p>
+                   <button class="tarif__discuss-button discuss-button">Обсудить проект</button>
+               </li>
+                <li class="offers-cost__tarif tarif tarif--basket">
+                    <p class="tarif__name">Расширенный</p>
+                    <ul class="tarif__services">
+                        <li class="tarif__services-item">Разработка интерфейса</li>
+                        <li class="tarif__services-item">Платежные системы</li>
+                        <li class="tarif__services-item">Почтовая рассылка</li>
+                    </ul>
+                    <p class="tarif__cost-row"><span class="sale-row">1 250 000 тг</span>940 000 тг</p>
+                    <button class="tarif__discuss-button discuss-button">Обсудить проект</button>
+                    <div class="tarif__sale">-30% до 30 сентября</div>
+                </li>
+                <li class="offers-cost__tarif tarif tarif--marker">
+                    <p class="tarif__name">Гипермаркет</p>
+                    <ul class="tarif__services">
+                        <li class="tarif__services-item">Платежные и CRM-системы</li>
+                        <li class="tarif__services-item">СЕО-продвижение</li>
+                        <li class="tarif__services-item">Почтовая рассылка</li>
+                    </ul>
+                    <p class="tarif__cost-row">от 1 550 000 тг</p>
+                    <button class="tarif__discuss-button discuss-button">Обсудить проект</button>
+                </li>
+            </ul>
         </div>
     </div>
 

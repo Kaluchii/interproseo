@@ -30,12 +30,12 @@
   &__discuss{
     font-size: 20px;
     color: #ffffff;
-    font-family: "Arial",sans-serif;
+    font-family: @Arial;
   }
   &__phone{
     font-size: 20px;
     color: #ffffff;
-    font-family: RotondaBold;
+    font-family: @RotondaBold;
   }
 }
 .about{
@@ -43,15 +43,17 @@
   max-width: 650px;
   &__title{
     color: #ffffff;
-    font-family: RotondaBold;
+    font-family: @RotondaBold;
     font-weight: normal;
     font-size: 42px;
     line-height: 1.2em;
   }
   &__description{
     margin-top: 40px;
+    position: relative;
+    z-index: 2;
     color: #afc6de;
-    font-family: "Arial", sans-serif;
+    font-family: @Arial;
     font-size: 20px;
     line-height: 1.5em;
   }
@@ -64,6 +66,7 @@
   max-width: 510px;
   &--no-pad{
     padding: 0;
+    margin-bottom: 55px;
   }
   &--package{
     &:before{
@@ -91,7 +94,7 @@
   }
 
   &__title{
-    font-family:RotondaBold;
+    font-family:@RotondaBold;
     color: @gray-1;
     font-size: 32px;
   }

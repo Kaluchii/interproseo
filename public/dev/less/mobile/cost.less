@@ -1,0 +1,28 @@
+@media screen and (max-width: 1080px) {
+  .tarif {
+    min-width: ~'calc(33.3333% - 50px)';
+    max-width: 33.3333%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cost{
+    &__block-title{
+      padding: 0 20px 30px;
+    }
+    &__description{
+      padding: 0 20px;
+    }
+  }
+  .offers-cost{
+    flex-direction: column;
+    align-items: center;
+    &__tarif{
+    }
+  }
+  .tarif {
+    min-width: ~'calc(100% - 50px)';
+    max-width: 33.3333%;
+  }
+
+}

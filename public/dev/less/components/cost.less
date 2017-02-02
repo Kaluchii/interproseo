@@ -1,0 +1,132 @@
+.cost{
+  //max-width: 1200px;
+  //margin: 70px auto;
+
+  //padding-left: 160px;
+  &__block-title{
+    text-align: center;
+    //padding-right: 160px;
+    padding-bottom: 30px;
+  }
+  &__description{
+    font-family: @Arial;
+    color: @gray-2;
+    font-size: 18px;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    //padding-right: 160px;
+  }
+  &__offers-cost{  }
+}
+.yellow-back{
+  background: #ffeda6;
+  color: @gray-1;
+}
+.offers-cost{
+  display: flex;
+  align-items: flex-start;
+  &__tarif{
+    margin: 90px 25px 0;
+  }
+}
+
+.tarif{
+  background: #eff2f5;
+  position: relative;
+  list-style-type: none;
+  padding: 35px 0 0;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  &:before{
+    content:'';
+    position: absolute;
+    width: 225px;
+    height: 175px;
+    top:-75px;
+    left: ~'calc(50% - 112px)';
+  }
+  &--package{
+    &:before{
+      background: url(../img/2q.png) no-repeat;
+    }
+  }
+  &--basket{
+    &:before{
+      background: url(../img/1q.png) no-repeat;
+    }
+  }
+  &--marker{
+    &:before{
+      background: url(../img/3q.png) no-repeat;
+    }
+  }
+
+  &__name{
+    font-family: @RotondaBold;
+    color: @gray-1;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding:0 0 75px;
+  }
+  &__services{
+    margin-bottom: 70px;
+  }
+  &__services-item{
+    margin: 5px 0;
+    text-align: center;
+    list-style-type: none;
+    color: @gray-2;
+    font-size:16px;
+    font-family: @Arial;
+  }
+
+  &__cost-row{
+    position: relative;
+    text-align: center;
+    font-family: @RotondaBold;
+    color: @gray-1;
+    font-size:24px;
+    .sale-row{
+      position: absolute;
+      text-decoration: line-through;
+      font-family: "Arial",sans-serif;
+      font-size: 14px;
+      color: @gray-2;
+      top: -25px;
+      left: 45px;
+      &:empty{  display: none;  }
+    }
+  }
+  &__discuss-button{
+    text-align: center;
+    margin: 22px auto 30px;
+  }
+  &__sale{
+    width: 100%;
+    text-align: center;
+    background: #ffcc66;
+    padding: 10px 0;
+    font-size: 14px;
+    color: @gray-1;
+    font-family: @Arial;
+  }
+}
+.discuss-button{
+  background: #ffcc66;
+  border: 1px solid #cc9933;
+  font-family: @Arial;
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: @gray-1;
+  &:hover, &:focus{
+    cursor: pointer;
+    background: #fbbb3c;
+  }
+}
