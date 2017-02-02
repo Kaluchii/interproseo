@@ -60,7 +60,7 @@ return [
         'groups' => [
             'shops_variant' => [
                 'image' => ['figure'],
-                'string' => ['cost_with', 'cost_without', 'special_condition'],
+                'string' => ['cost_with', 'cost_without', 'special_condition', 'spec_cond_color'],
                 'text' => ['descr'],
             ],
         ]

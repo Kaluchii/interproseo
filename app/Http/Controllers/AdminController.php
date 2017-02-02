@@ -14,6 +14,9 @@ class AdminController extends Controller
         $this->extract = $ext;
         $this->extract->tuneSelection('text_adv')->sortBy('id','DESC');
         $this->extract->tuneSelection('adv_on_check')->sortBy('id','DESC');
+        $this->extract->tuneSelection('clients')->sortBy('id','DESC');
+        $this->extract->tuneSelection('advantages')->sortBy('id','DESC');
+        $this->extract->tuneSelection('works')->sortBy('id','DESC');
     }
 
     public function getIndex(){
@@ -66,6 +69,13 @@ class AdminController extends Controller
         $shops = $this->extract->getBlock('shops');
         return view('back.blocks.shops',[
             'shops' => $shops
+        ]);
+    }
+
+    public function getShopsItem( $id ){
+        $shop_item = $this->extract->getGroupItem('shops_variant', $id);
+        return view('back.groups.shops_variant.shops_variant', [
+            'item' => $shop_item
         ]);
     }
 
