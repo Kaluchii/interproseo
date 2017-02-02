@@ -13,7 +13,7 @@
                        value="{{$seo->seo_title_field}}"
                        data-name="seo_title"
                        data-type="seo"
-                       data-block="head_slider"
+                       data-block="static_all_site"
                        data-id="0">
             </div>
             <div class="form-group">
@@ -23,7 +23,7 @@
                        value="{{$seo->seo_keywords_field}}"
                        data-name="seo_keywords"
                        data-type="seo"
-                       data-block="head_slider"
+                       data-block="static_all_site"
                        data-id="0">
             </div>
             <div class="form-group">
@@ -31,7 +31,7 @@
                 <textarea class="form-control text"
                           data-name="seo_description"
                           data-type="seo"
-                          data-block="head_slider"
+                          data-block="static_all_site"
                           data-id="0">{{$seo->seo_description_field}}</textarea>
             </div>
             <div class="form-group">
@@ -39,7 +39,7 @@
                 <textarea class="form-control text"
                           data-name="seo_text"
                           data-type="seo"
-                          data-block="head_slider"
+                          data-block="static_all_site"
                           data-id="0">{{$seo->seo_text_field}}</textarea>
             </div>
         </div>

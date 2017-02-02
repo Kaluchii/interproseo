@@ -53,7 +53,7 @@
                         <i class="glyphicon glyphicon-folder-open"></i>&nbsp;
                         <span class="hidden-xs">Выбрать изображение …</span>
                         <input type="file" class="form-control file"
-                               data-block="static_all_site"
+                               data-block="quick_start"
                                data-name="for_example"
                                data-type="image"
                                data-id="0">
