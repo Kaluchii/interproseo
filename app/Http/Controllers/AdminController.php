@@ -12,8 +12,8 @@ class AdminController extends Controller
     private $extract;
     public function __construct(ExtractAgent $ext){
         $this->extract = $ext;
-        $this->extract->tuneSelection('text_adv')->sortBy('id','DESC');
-        $this->extract->tuneSelection('adv_on_check')->sortBy('id','DESC');
+        $this->extract->tuneSelection('text_left')->sortBy('id','DESC');
+        $this->extract->tuneSelection('on_check')->sortBy('id','DESC');
         $this->extract->tuneSelection('clients')->sortBy('id','DESC');
         $this->extract->tuneSelection('advantages')->sortBy('id','DESC');
         $this->extract->tuneSelection('works')->sortBy('id','DESC');

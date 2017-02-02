@@ -5,8 +5,8 @@ return [
     'quick_start.for_example'=> [
         'resizes' => ['preview']
     ],
-    'adv_on_check.for_example'=> [
-        'resizes' => ['adv']
+    'on_check.icon'=> [
+        'resizes' => ['preview']
     ],
     'clients.client_logo'=> [
         'resizes' => ['preview']

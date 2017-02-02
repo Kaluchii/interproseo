@@ -40,28 +40,12 @@
   width: 100%;
   max-width: 300px;
   box-sizing: border-box;
-  &:before{
-    content:'';
+  &--before{
     position: absolute;
     width: 225px;
     height: 175px;
     top:-75px;
     left: ~'calc(50% - 112px)';
-  }
-  &--package{
-    &:before{
-      background: url(../img/2q.png) no-repeat;
-    }
-  }
-  &--basket{
-    &:before{
-      background: url(../img/1q.png) no-repeat;
-    }
-  }
-  &--marker{
-    &:before{
-      background: url(../img/3q.png) no-repeat;
-    }
   }
 
   &__name{
@@ -75,14 +59,17 @@
   }
   &__services{
     margin-bottom: 70px;
+    p{
+      margin: 5px 0;
+      text-align: center;
+      list-style-type: none;
+      color: @gray-2;
+      font-size:16px;
+      font-family: @Arial;
+    }
   }
   &__services-item{
-    margin: 5px 0;
-    text-align: center;
-    list-style-type: none;
-    color: @gray-2;
-    font-size:16px;
-    font-family: @Arial;
+
   }
 
   &__cost-row{

@@ -16,12 +16,12 @@ return [
         'image' => ['for_example'],
         'text' => ['example'],
         'groups' => [
-            'text_adv' => [
+            'text_left' => [
                 'string' => ['adv_title'],
                 'text' => ['descr'],
             ],
-            'adv_on_check' => [
-                'image' => ['adv'],
+            'on_check' => [
+                'image' => ['icon'],
                 'text' => ['descr'],
             ],
         ]
