@@ -19,5 +19,14 @@
     </div>
     @include('front.scripts')
     @yield('scripts')
+    @include('front.popups.discuss')
+    @include('front.popups.thank')
+    <div class="hide">
+        @yield('discuss')
+        @yield('thank')
+    </div>
+    <div class="hide">
+        <a href="#thanks" class="thank"></a>
+    </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
             <div class="offers__header header">
                 <div class="information-row header__information-row">
                     <div class="information-row__discuss">
-                        <a href="#" class="link">Обсудить проект</a>
+                        <a href="#discuss" class="link discuss-project">Обсудить проект</a>
                     </div>
                     <div class="information-row__phone">{{$all->phone_field}}</div>
                 </div>
@@ -122,7 +122,7 @@
                                 {!! $item->descr_field !!}
                         </div>
                         <p class="tarif__cost-row">@if($item->cost_with_field != '')<span class="sale-row">{{$item->cost_with_field}}</span>@endif{{$item->cost_without_field}}</p>
-                        <button class="tarif__discuss-button discuss-button">Обсудить проект</button>
+                        <button href="#discuss" class="tarif__discuss-button discuss-button discuss-project">Обсудить проект</button>
                         @if($item->special_condition_field != '')
                             <div class="tarif__sale" style="background-color: {{$item->spec_cond_color_field}};">{{$item->special_condition_field}}</div>
                         @endif    

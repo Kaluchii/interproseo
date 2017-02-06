@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'FrontController@getIndex');
-
+Route::post('/feedback/mail', 'Back\MailController@send');
 
 Route::auth();
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
