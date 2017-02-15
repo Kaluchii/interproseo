@@ -64,8 +64,14 @@
             <ul class="clients__clients-list clients-list">
                 @foreach($client->clients_group as $item)
                     <li class="clients-list__item item">
+                        <div class="item__text-top text-block"><p>Посещения сайта косметологической клиники «Медстайл» за 6 месяцев</p></div>
+                        <div class="item__picture"><img src="{{$item->client_logo_field->link}}" alt="{{$item->client_logo_field->alt}}"></div>
+                        <p class="item__description">{!! $item->descr_field !!}</p>
+                        <div class="item__text-bottom text-block"><p>СЕО- продвижение и контекстная реклама в Яндекс и Google</p></div>
+                        {{--<div class="item__description">{!! $item->text_top_field !!}</div>
                         <img src="{{$item->client_logo_field->link}}" alt="{{$item->client_logo_field->alt}}" class="item__picture">
-                        <p class="item__description">{{$item->descr_field}}</p>
+                        <p class="item__description item__description--bold">{{$item->descr_field}}</p>
+                        <div class="item__description">{!! $item->text_bottom_field !!}</div>--}}
                     </li>
                 @endforeach
             </ul>
@@ -75,59 +81,40 @@
     <div class="wrap-1200 ">
         <div class="wrap-1200__all-inclusive all-inclusive">
             <h2 class="all-inclusive__block-title block-title">Как мы работаем</h2>
-            <ul class="all-inclusive__advantages-list advantages-list">
+            <ol class="all-inclusive__advantages-list advantages-list">
                 @foreach($inclusive->advantages_group as $item)
                     <li class="advantages-list__advantages-item advantages-item">
                         <p class="advantages-item__title">{{$item->adv_title_field}}</p>
                         <p class="advantages-item__description">{{$item->descr_field}}</p>
                     </li>
                 @endforeach
-            </ul>
+            </ol>
             <p class="all-inclusive__interview">
-              Мы подробно расскажем о возможностях интернет-магазина на личной встрече.
+              Мы подробно расскажем о нашем подходе на личной встрече.
             </p>
         </div>
     </div>
 
     <div class="wrap-1200 wrap-1200--in-cost">
         <div class="wrap-1200__in-cost in-cost">
-            <h2 class="in-cost__block-title block-title block-title--white block-title--over">Что входит в стоимость</h2>
-            {{--<div class="in-cost__package package">
-                <ul class="package__in-cost-list in-cost-list">
-
-                    @foreach($in_cost->works_group as $item)
-                        <li class="in-cost-list__item advantages-item advantages-item--cost">
-                            <img src="{{$item->work_field->link}}" alt="{{$item->work_field->alt}}" class="advantages-item__icon">
-                            <p class="advantages-item__title advantages-item__title--blue">{{$item->work_title_field}}</p>
-                            <p class="advantages-item__description">{{$item->descr_field}}</p>
+            <h2 class="in-cost__block-title block-title block-title--white block-title--over">Комплекты услуг</h2>
+            <div class="in-cost__package package">
+                <ul class="package__offers-cost offers-cost">
+                    @foreach($cost->shops_variant_group as $item)
+                        <li class="offers-cost__tarif tarif tarif--package">
+                            <p class="tarif__name">{{$item->title_field}}</p>
+                            <div class="tarif__services text-block">
+                                {!! $item->descr_field !!}
+                            </div>
+                            <p class="tarif__cost-row">@if($item->cost_with_field != '')<span class="sale-row">{{$item->cost_with_field}}</span>@endif{{$item->cost_without_field}}</p>
+                            <button href="#discuss" class="tarif__discuss-button discuss-button discuss-project">Обсудить проект</button>
+                            @if($item->special_condition_field != '')
+                                <div class="tarif__sale" style="background-color: {{$item->spec_cond_color_field}};">{{$item->special_condition_field}}</div>
+                            @endif
                         </li>
                     @endforeach
                 </ul>
-            </div>--}}
+            </div>
         </div>
     </div>
-
-    <div class="wrap-1200">
-        <div class="wrap-1200__cost cost">
-            <div class="cost__block-title block-title">Магазины на любой вкус</div>
-            <p class="cost__description">{!! $cost->descr_field !!}</p>
-            <ul class="cost__offers-cost offers-cost">
-                @foreach($cost->shops_variant_group as $item)
-                    <li class="offers-cost__tarif tarif tarif--package">
-                        {{--<img src="{{$item->figure_field->link}}" class="tarif--before" alt="">--}}
-                        <p class="tarif__name">{{$item->title_field}}</p>
-                        <div class="tarif__services">
-                                {!! $item->descr_field !!}
-                        </div>
-                        <p class="tarif__cost-row">@if($item->cost_with_field != '')<span class="sale-row">{{$item->cost_with_field}}</span>@endif{{$item->cost_without_field}}</p>
-                        <button href="#discuss" class="tarif__discuss-button discuss-button discuss-project">Обсудить проект</button>
-                        @if($item->special_condition_field != '')
-                            <div class="tarif__sale" style="background-color: {{$item->spec_cond_color_field}};">{{$item->special_condition_field}}</div>
-                        @endif    
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-    </div>
-
 @endsection

@@ -16,7 +16,6 @@ class FrontController extends Controller
         $this->extract->tuneSelection('on_check')->sortBy('id','ASC');
         $this->extract->tuneSelection('clients')->sortBy('id','ASC');
         $this->extract->tuneSelection('advantages')->sortBy('id','ASC');
-        $this->extract->tuneSelection('works')->sortBy('id','ASC');
     }
 
     public function getIndex(){
@@ -25,7 +24,6 @@ class FrontController extends Controller
         $quick = $this->extract->getBlock('quick_start');
         $client = $this->extract->getBlock('clients_block');
         $inclusive = $this->extract->getBlock('all_inclusive');
-        $in_cost = $this->extract->getBlock('in_cost');
         $cost = $this->extract->getBlock('shops');
 
         return view('front.index.index',[
@@ -34,7 +32,6 @@ class FrontController extends Controller
             'quick' => $quick,
             'client' => $client,
             'inclusive' => $inclusive,
-            'in_cost'   => $in_cost,
             'cost'      => $cost
         ]);
     }

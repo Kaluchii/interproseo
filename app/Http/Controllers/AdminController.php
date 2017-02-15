@@ -16,7 +16,6 @@ class AdminController extends Controller
         $this->extract->tuneSelection('on_check')->sortBy('id','DESC');
         $this->extract->tuneSelection('clients')->sortBy('id','DESC');
         $this->extract->tuneSelection('advantages')->sortBy('id','DESC');
-        $this->extract->tuneSelection('works')->sortBy('id','DESC');
     }
 
     public function getIndex(){
@@ -44,7 +43,7 @@ class AdminController extends Controller
         ]);
     }
 
-    public function getAmong(){
+    public function getClients(){
         $clients_block = $this->extract->getBlock('clients_block');
         return view('back.blocks.clients_block',[
             'clients_block' => $clients_block
@@ -55,13 +54,6 @@ class AdminController extends Controller
         $all_inclusive = $this->extract->getBlock('all_inclusive');
         return view('back.blocks.all_inclusive',[
             'all_inclusive' => $all_inclusive
-        ]);
-    }
-
-    public function getInCost(){
-        $in_cost = $this->extract->getBlock('in_cost');
-        return view('back.blocks.in_cost',[
-            'in_cost' => $in_cost
         ]);
     }
 

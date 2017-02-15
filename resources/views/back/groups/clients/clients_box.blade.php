@@ -8,7 +8,7 @@
     <div class="box-body">
 
         <div class="form-group">
-            <label>Изображение внизу блока (для примера)</label>
+            <label>Изображение в блоке</label>
             <div class="dropzone">
                 <div class="file-input">
                     <div class="file-preview">
@@ -62,6 +62,22 @@
                    data-type="string"
                    data-block="clients"
                    data-id="{{$item->id_field}}">
+        </div>
+        <div class="form-group">
+            <label>Текст вверху блока</label>
+            <textarea class="form-control text"
+                      data-name="text_top"
+                      data-type="text"
+                      data-block="clients"
+                      data-id="{{$item->id_field}}">{{$item->text_top_field}}</textarea>
+        </div>
+        <div class="form-group">
+            <label>Текст внизу блока</label>
+            <textarea class="form-control text"
+                      data-name="text_bottom"
+                      data-type="text"
+                      data-block="clients"
+                      data-id="{{$item->id_field}}">{{$item->text_bottom_field}}</textarea>
         </div>
     </div>
 </div>

@@ -14,27 +14,22 @@
             </li>
             <li>
                 <a href="/adm/quick">
-                    <i class="fa fa-globe"></i> <span>Быстрый старт</span>
+                    <i class="fa fa-globe"></i> <span>Где ваши клиенты</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/among">
-                    <i class="fa fa-globe"></i> <span>Среди клиентов</span>
+                <a href="/adm/clients">
+                    <i class="fa fa-globe"></i> <span>Наши клиенты</span>
                 </a>
             </li>
             <li>
                 <a href="/adm/all_inclusive">
-                    <i class="fa fa-globe"></i> <span>Все включено</span>
-                </a>
-            </li>
-            <li>
-                <a href="/adm/in_cost">
-                    <i class="fa fa-globe"></i> <span>Что входит в стоимость</span>
+                    <i class="fa fa-globe"></i> <span>Как мы работаем</span>
                 </a>
             </li>
             <li>
                 <a href="/adm/shops">
-                    <i class="fa fa-globe"></i> <span>Магазины на любой вкус</span>
+                    <i class="fa fa-globe"></i> <span>Комплекты услуг</span>
                 </a>
             </li>
             <li>

@@ -21,9 +21,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     Route::get('/all',                  'AdminController@getAll');
     Route::get('/offers',               'AdminController@getOffers');
     Route::get('/quick',                'AdminController@getQuick');
-    Route::get('/among',                'AdminController@getAmong');
+    Route::get('/clients',              'AdminController@getClients');
     Route::get('/all_inclusive',        'AdminController@getAllInclusive');
-    Route::get('/in_cost',              'AdminController@getInCost');
     Route::get('/shops',                'AdminController@getShops');
     Route::get('/shops/{id}',           'AdminController@getShopsItem');
 

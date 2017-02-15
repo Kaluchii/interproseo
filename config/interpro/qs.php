@@ -32,6 +32,7 @@ return [
             'clients' => [
                 'image' => ['client_logo'],
                 'string' => ['descr'],
+                'text' => ['text_top', 'text_bottom'],
             ],
         ]
     ],
@@ -40,16 +41,6 @@ return [
         'groups' => [
             'advantages' => [
                 'string' => ['adv_title'],
-                'text' => ['descr'],
-            ],
-        ]
-    ],
-
-    'in_cost' => [
-        'groups' => [
-            'works' => [
-                'image' => ['work'],
-                'string' => ['work_title'],
                 'text' => ['descr'],
             ],
         ]

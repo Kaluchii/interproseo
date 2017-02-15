@@ -1,49 +1,56 @@
 .all-inclusive{
   //max-width: 1200px;
-  &__block-title{}
+  &__block-title{
+    text-align: center;
+  }
   &__advantages-list{
     margin-top: 90px;
   }
   &__interview{
-    background: url(../img/interview.png) no-repeat center top;
-    padding-top: 90px;
+    background: url(../img/interview.png) no-repeat center bottom;
+    padding: 0 40px 110px 40px;
     //padding-right: 180px;
     font-family: @RotondaBold;
-    font-size:24px;
-    max-width: 500px;
-    margin: 0 auto;
-    line-height: 1.4em;
+    font-size: 24px;
+    max-width: 700px;
+    margin: 15px auto 0;
+    line-height: 1.4;
     text-align: center;
-    color: @gray-1;
+    color: @gray-2;
   }
 }
 
 .advantages-list{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 60px 0 90px;
   &__advantages-item{
-    padding-right:50px;
     box-sizing: border-box;
     margin-bottom: 80px;
-    width: 30%;
+    max-width: 300px;
     margin-right: 15px;
   }
 }
 .advantages-item{
-  list-style-type: none;
+  padding-left: 4px;
+  list-style-position: outside;
+  font-family: @Arial;
+  font-weight: bold;
+  color: @gray-1;
   &__title{
-    font-family: @Arial;
     font-weight: bold;
     color: @gray-1;
     font-size:16px;
+    line-height: 1.5;
     &--blue{
       color: #0785ba;
     }
   }
   &__description{
+    font-weight: normal;
     color: @gray-2;
-    line-height: 1.5em;
+    line-height: 1.5;
     font-size:16px;
-    font-family: @Arial;
   }
 }

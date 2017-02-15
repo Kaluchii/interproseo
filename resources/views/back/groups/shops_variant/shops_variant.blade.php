@@ -68,7 +68,7 @@
 
             <div class="form-group">
                 <label>Текст входящих в пакет работ</label>
-                <textarea class="form-control text"
+                <textarea class="form-control  text-editor"
                           data-name="descr"
                           data-type="text"
                           data-block="shops_variant"

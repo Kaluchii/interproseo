@@ -1,5 +1,6 @@
 .where{
   padding-top: 80px;
+  padding-bottom: 163px;
   /*&__table{}
   &__referat{
     display: flex;
@@ -50,11 +51,19 @@
 
 .column{
   &--results{
-    background-color: #ece7fd;
+    position: relative;
+    background-color: rgba(195, 176, 250, 0.3);
     box-sizing: border-box;
     max-width: 320px;
     padding: 20px 30px 0;
     margin-top: 10px;
+    &:after {
+      position: absolute;
+      bottom: -167px;
+      right: -52px;
+      background-color: transparent;
+      content: url('/img/result.png');
+    }
     .column__title {
       font-family: RotondaBold;
       color: #333333;

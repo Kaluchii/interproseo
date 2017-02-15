@@ -11,9 +11,6 @@ return [
     'clients.client_logo'=> [
         'resizes' => ['preview']
     ],
-    'works.work'=> [
-        'resizes' => ['preview']
-    ],
     'shops_variant.figure'=> [
         'resizes' => ['preview']
     ],
