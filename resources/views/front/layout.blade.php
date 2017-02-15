@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="tent"></div>
+        {{--<div class="tent"></div>--}}
         @yield('content')
 
         @include('front.footer')

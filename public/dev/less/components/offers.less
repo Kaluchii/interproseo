@@ -8,11 +8,11 @@
     padding: 50px 0 0;
   }
   &__about{
-    margin: 100px auto;
+    margin: 80px auto;
   }
   &__offer-case{
     display: flex;
-    margin: 145px 60px 0;
+    margin: 140px 60px 0;
     position: relative;
     justify-content: space-between;
   }
@@ -40,57 +40,35 @@
 }
 .about{
   text-align: center;
-  max-width: 650px;
+  max-width: 700px;
   &__title{
     color: #ffffff;
     font-family: @RotondaBold;
     font-weight: normal;
-    font-size: 42px;
+    font-size: 48px;
     line-height: 1.2em;
   }
   &__description{
-    margin-top: 40px;
+    margin: 40px auto 0 auto;
+    max-width: 590px;
     position: relative;
     z-index: 2;
     color: #afc6de;
     font-family: @Arial;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5em;
   }
 }
 .offer-case{
   background: #ffffff;
   margin: 0;
-  padding: 40px;
+  padding: 30px 30px 10px 40px;
   box-sizing: border-box;
   max-width: 510px;
-  &--no-pad{
+  &--where{
     padding: 0;
     margin-bottom: 55px;
-  }
-  &--package{
-    &:before{
-      position: absolute;
-      top: -93px;
-      left: 186px;
-      content: '';
-      background: url(../img/package.png) no-repeat;
-      display: block;
-      width: 103px;
-      height: 108px;
-    }
-  }
-  &--cart{
-    &:before{
-      top:-143px;
-      right: 88px;
-      position: absolute;
-      content: '';
-      background: url(../img/cart.png) no-repeat;
-      width: 161px;
-      height: 144px;
-      display: block;
-    }
+    max-width: 530px;
   }
 
   &__title{
@@ -102,7 +80,7 @@
     font-family: "Arial",sans-serif;
     color: @gray-2;
     font-size:16px;
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 1.5em;
     &--small-space{
         margin-top: 10px;
