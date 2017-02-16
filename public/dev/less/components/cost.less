@@ -1,6 +1,6 @@
 .package{
   position: relative;
-  padding: 40px 30px 60px;
+  padding: 40px 30px 25px;
   box-sizing: border-box;
   &:before{
     content: '';
@@ -13,6 +13,17 @@
     left: ~'calc(50% - 128px)';
 
   }
+  &__interview{
+    text-align: center;
+    padding: 85px 0 110px;
+    color: @gray-2;
+    font-family: @Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+    background: url(../img/interview.png) no-repeat center bottom;
+  }
   &__block-title{
     text-align: center;
     padding-bottom: 30px;
@@ -23,7 +34,7 @@
     font-size: 18px;
     text-align: center;
     max-width: 800px;
-    line-height: 1.5em;
+    line-height: 1.5;
     margin: 0 auto;
   }
   &__offers-cost{  }
@@ -34,9 +45,11 @@
 }
 .offers-cost{
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
+  padding: 0 15px;
   &__tarif{
-    margin: 90px 25px 0;
+    margin: 90px 15px 0;
   }
 }
 .in-cost{
@@ -54,7 +67,6 @@
   background: #eff2f5;
   position: relative;
   list-style-type: none;
-  padding: 35px 15px 0;
   width: 100%;
   max-width: 300px;
   box-sizing: border-box;
@@ -68,24 +80,18 @@
   }
 
   &__name{
+    margin-top: 35px;
     font-family: @RotondaBold;
     color: @gray-1;
     font-size: 24px;
     text-align: center;
     position: relative;
     z-index: 2;
-    /*padding:0 0 75px;*/
   }
   &__services{
-    margin-bottom: 70px;
-    p{
-      margin: 5px 0;
-      text-align: center;
-      list-style-type: none;
-      color: @gray-2;
-      font-size: 16px;
-      font-family: @Arial;
-    }
+    margin: 15px 0 50px;
+    padding: 0 15px;
+    text-align: center;
     b{
       color: #333333;
     }
@@ -106,14 +112,14 @@
       font-family: "Arial",sans-serif;
       font-size: 14px;
       color: @gray-2;
-      top: -25px;
-      left: 45px;
+      top: -20px;
+      left: 110px;
       &:empty{  display: none;  }
     }
   }
   &__discuss-button{
     text-align: center;
-    margin: 22px auto 30px;
+    margin: 15px auto 30px;
   }
   &__sale{
     width: 100%;
