@@ -5,20 +5,18 @@
     }
   }
 }
-@media screen and (max-width: 1024px) {
-  .offer-case{
-    &--package{
-      &:before{
-        display: none;
-      }
-    }
-    &--cart{
-      &:before{
-        display: none;
-      }
+@media screen and (max-width: 880px) {
+  .offers{
+    &__offer-case{
+      flex-direction: column;
     }
   }
-
+  .offer-case{
+    max-width: 100%;
+    &:not(.offer-case--where):nth-child(n){
+      margin: 0;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .header{
@@ -26,29 +24,16 @@
   }
   .about{
     margin: 40px auto;
+  }
+  .about{
     &__title{
-      padding: 0 20px;
+      font-size: 38px;
     }
-    &__description{
-      padding: 0 20px;
-    }
-  }
-  .offers{
-    &__offer-case{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      justify-content: space-between;
-    }
-  }
-  .offer-case{
-    max-width: 100%;
   }
 }
-
 @media screen and (max-width: 500px){
   .header{
-    margin: 0 10px;
+    margin: 0 15px;
   }
   .information-row{
     &__discuss{
@@ -61,11 +46,24 @@
   .about{
     &__title{
       font-size: 28px;
-      padding: 0 10px;
     }
     &__description{
       font-size: 16px;
-      padding: 0 10px;
+    }
+  }
+  .offer-case{
+    &__title{
+      font-size: 24px;
+    }
+  }
+}
+@media screen and (max-width: 420px){
+  .about{
+    padding: 0 20px;
+  }
+  .offer-case{
+    &:not(.offer-case--where){
+      padding: 30px 20px 10px;
     }
   }
 }

@@ -1,9 +1,4 @@
 @media screen and (max-width: 1080px) {
-  .table{
-    &__pen{
-      display: none;
-    }
-  }
   .column{
     &--printer{
       min-width: 374px;
@@ -13,42 +8,46 @@
 @media screen and (max-width: 768px) {
   .table{
     flex-direction: column;
+    padding: 0 40px;
   }
   .quick-start{
     &__referat{
       flex-direction: column-reverse;
     }
   }
-  .column{
-    &--printer{
-      background: none;
-      min-width: 100%;
+  .column-result{
+    display: flex;
+    align-items: flex-start;
+    &:nth-child(2) {
+      margin-top: 45px;
     }
+    margin-top: 55px;
+    &__icon{}
+    &__description{
+      margin: 0 0 0 30px;
+    }
+  }
+
+  .column{
     &--results:after{
       content: '';
     }
     &--results {
-      padding-bottom: 40px;
+      padding-bottom: 60px;
+      max-width: none;
     }
   }
-  .referat{
-    &__text{
-      text-align: center;
-      padding-left: 0;
-    }
-  }
-  .printer{
-    display: none;
-  }
-  .column-check{
-    width: 100%;
-    max-width: 100%;
-    top:0;
-    padding: 0;
-    margin: 0 0 40px;
+}
+@media screen and (max-width: 500px) {
+  .column-result{
+    flex-direction: column;
     &__description{
-      padding: 0;
-      margin: 0;
+      margin: 15px 0 0 0;
     }
+  }
+}
+@media screen and (max-width: 420px) {
+  .table{
+    padding: 0 20px;
   }
 }

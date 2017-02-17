@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="offers__about about">
-                <h1 class="about__title">Привлечение клиентов на сайт</h1>
+                <h1 class="about__title">Привлечение клиентов на&nbsp;сайт</h1>
                 <p class="about__description">{{$offer->offer_about_field}}</p>
             </div>
 
@@ -32,7 +32,7 @@
     <div class="wrap-1200">
         <div class="wrap-1200__where where">
             <div class="where__table table">
-                <div class="table__column column">
+                <div class="table__column column column--where">
                     <h2 class="column__block-title block-title">Где ваши клиенты?</h2>
                     @foreach($quick->text_left_group as $item)
                         <div class="offer-case offer-case--where">
@@ -50,11 +50,6 @@
                         </div>
                     @endforeach
                 </div>
-            </div>
-            {{--<div class="where__referat referat">
-                <img src="/img/referat.png" alt="" class="referat__icon">
-                <p class="referat__text">Например, наш <a href="#" class="link">реферат по интернет-магазинам мебели эконом-класса.</a></p>
-            </div>--}}
         </div>
     </div>
 
@@ -65,7 +60,7 @@
                 @foreach($client->clients_group as $item)
                     <li class="clients-list__item item">
                         <div class="item__text-top text-block"><p>Посещения сайта косметологической клиники «Медстайл» за 6 месяцев</p></div>
-                        <div class="item__picture"><img src="{{$item->client_logo_field->link}}" alt="{{$item->client_logo_field->alt}}"></div>
+                        <div class="item__picture-wrap"><img src="{{$item->client_logo_field->link}}" alt="{{$item->client_logo_field->alt}}" class="item__picture"></div>
                         <p class="item__description">{!! $item->descr_field !!}</p>
                         <div class="item__text-bottom text-block"><p>СЕО- продвижение и контекстная реклама в Яндекс и Google</p></div>
                         {{--<div class="item__description">{!! $item->text_top_field !!}</div>

@@ -1,53 +1,12 @@
 .where{
   padding-top: 80px;
   padding-bottom: 163px;
-  /*&__table{}
-  &__referat{
-    display: flex;
-    align-items: center;
-  }*/
 }
-
-/*.referat{
-  overflow: hidden;
-  &:hover{
-    .referat__icon{
-    transform: translateY(0px);
-    transition: all 1s ease;
-    }
-  }
-  &__icon{
-    position: relative;
-    transform: translateY(20px);
-    transition: all 1s ease;
-  }
-  &__text{
-    padding-left: 25px;
-    font-family: @Arial;
-    font-size:18px;
-    color: @gray-1;
-    .link{
-      .link(@link-color,@link-border,@hover-color,@hover-border);
-    }
-  }
-}*/
 
 .table{
   display: flex;
   justify-content: space-between;
   padding: 0 55px;
-  /*&__column{
-
-  }
-  &__pen{
-    position: absolute;
-    display: block;
-    background: url(../img/pen.png) no-repeat;
-    width: 157px;
-    height: 387px;
-    top: 160px;
-    left: 280px;
-  }*/
 }
 
 .column{
@@ -56,6 +15,8 @@
     background-color: rgba(195, 176, 250, 0.3);
     box-sizing: border-box;
     max-width: 320px;
+    min-width: 250px;
+    width: 100%;
     padding: 20px 30px 0;
     margin-top: 10px;
     &:after {
@@ -70,6 +31,9 @@
       color: #333333;
       font-size: 32px;
     }
+  }
+  &--where{
+    padding: 0 30px 0 0;
   }
   &__block-title{
     padding-bottom: 60px;

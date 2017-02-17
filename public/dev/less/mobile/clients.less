@@ -1,22 +1,18 @@
 @media screen and (max-width: 1080px){
   .clients{
     &__block-title{
-      padding-left: 40px;
     }
     &__clients-list{
     }
   }
   .clients-list{
-    justify-content: flex-start;
     &__item{
       margin-bottom: 20px;
       width: 100%;
     }
   }
   .item{
-    padding: 15px 20px;
     &__picture{
-      max-width: 100%;
     }
     &__description{
     }
@@ -24,13 +20,30 @@
 }
 @media screen and (max-width: 768px) {
   .clients-list{
-    flex-direction: column;
     &__item{
       width: 100%;
-      margin: 0 0 20px 0;
     }
   }
   .item{
-    padding: 25px 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .clients-list{
+    &__item{
+      margin: 25px 0;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .item{
+    &__description{
+      padding: 10px 50px 50px;
+    }
+    &__text-top{
+      padding: 35px 20px 0;
+    }
+    &__text-bottom{
+      padding: 15px 70px 25px;
+    }
   }
 }

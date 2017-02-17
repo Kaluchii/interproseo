@@ -12,9 +12,9 @@
   }
   &__offer-case{
     display: flex;
-    margin: 140px 60px 0;
+    margin-top: 140px;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
   }
 
 }
@@ -41,12 +41,13 @@
 .about{
   text-align: center;
   max-width: 700px;
+  padding: 0 30px;
   &__title{
     color: #ffffff;
     font-family: @RotondaBold;
     font-weight: normal;
     font-size: 48px;
-    line-height: 1.2em;
+    line-height: 1.2;
   }
   &__description{
     margin: 40px auto 0 auto;
@@ -56,17 +57,22 @@
     color: #afc6de;
     font-family: @Arial;
     font-size: 18px;
-    line-height: 1.5em;
+    line-height: 1.5;
   }
 }
 .offer-case{
   background: #ffffff;
-  margin: 0;
   padding: 30px 30px 10px 40px;
   box-sizing: border-box;
   max-width: 510px;
+  &:not(.offer-case--where):first-child{
+    margin: 0 2% 0 4%;
+  }
+  &:not(.offer-case--where):last-child{
+    margin: 0 4% 0 2%;
+  }
   &--where{
-    padding: 0 30px 0 0;
+    padding: 0;
     margin-bottom: 55px;
     max-width: 560px;
   }
