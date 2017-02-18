@@ -1,36 +1,17 @@
-@media screen and (max-width: 1080px) {
-  .tarif {
-    min-width: ~'calc(33.3333% - 50px)';
-    max-width: 33.3333%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cost{
-    &__block-title{
-      padding: 0 20px 30px;
-    }
-    &__description{
-      padding: 0 20px;
-    }
-  }
+@media screen and (max-width: 1079px) {
   .offers-cost{
-    flex-direction: column;
-    align-items: center;
     &__tarif{
+      margin: 50px 30px 0;
     }
   }
-  .tarif {
-    min-width: ~'calc(100% - 50px)';
-    max-width: 33.3333%;
-  }
-
 }
-@media screen and (max-width: 600px) {
-  .in-cost-list{
-    flex-direction: column;
-    &__item{
-      width: 100%;
+@media screen and (max-width: 500px) {
+  .offers-cost{
+    &__tarif{
+      margin: 50px 0 0;
     }
+  }
+  .package{
+    padding: 40px 10px 25px;
   }
 }

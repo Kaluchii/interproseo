@@ -101,7 +101,7 @@
                             <div class="tarif__services text-block">
                                 {!! $item->descr_field !!}
                             </div>
-                            <p class="tarif__cost-row">@if($item->cost_with_field != '')<span class="sale-row">{{$item->cost_with_field}}</span>@endif{{$item->cost_without_field}}</p>
+                            <p class="tarif__cost-row">@if($item->cost_without_field != '')<span class="sale-row">{{$item->cost_without_field}}</span>@endif{{$item->cost_with_field}}</p>
                             <button href="#discuss" class="tarif__discuss-button discuss-button discuss-project">Обсудить проект</button>
                             @if($item->special_condition_field != '')
                                 <div class="tarif__sale" style="background-color: {{$item->spec_cond_color_field}};">{{$item->special_condition_field}}</div>

@@ -3,27 +3,6 @@
 
     @include('back.content-top', ['title' => 'Магазины на любой вкус'])
 
-    <div class="box box box-info">
-
-        <div class="box-header with-border">
-            <h3 class="box-title">Поля для редактирования</h3>
-        </div>
-
-
-        <div class="box-body">
-
-            <div class="form-group">
-                <label>Текст под заголовком</label>
-                <textarea class="form-control text"
-                          data-name="descr"
-                          data-type="text"
-                          data-block="shops"
-                          data-id="0">{{$shops->descr_field}}</textarea>
-            </div>
-
-        </div>
-    </div>
-
     <div class="row">
         <div class="col-xs-12">
             <div class="box table-widget">
