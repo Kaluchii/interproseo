@@ -63,10 +63,6 @@
                         <div class="item__picture-wrap"><img src="{{$item->client_logo_field->link}}" alt="{{$item->client_logo_field->alt}}" class="item__picture"></div>
                         <p class="item__description">{!! $item->descr_field !!}</p>
                         <div class="item__text-bottom text-block"><p>СЕО- продвижение и контекстная реклама в Яндекс и Google</p></div>
-                        {{--<div class="item__description">{!! $item->text_top_field !!}</div>
-                        <img src="{{$item->client_logo_field->link}}" alt="{{$item->client_logo_field->alt}}" class="item__picture">
-                        <p class="item__description item__description--bold">{{$item->descr_field}}</p>
-                        <div class="item__description">{!! $item->text_bottom_field !!}</div>--}}
                     </li>
                 @endforeach
             </ul>
