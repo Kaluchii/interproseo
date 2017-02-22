@@ -79,7 +79,7 @@ $(document).ready(function(){
 
                 if(dataobj['fields']['discuss_service'] == 'Быстрый старт'){
 
-                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Quick start');
+                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : fast start');
 
                 }else if(dataobj['fields']['discuss_service'] == 'Кампания'){
 
@@ -87,7 +87,7 @@ $(document).ready(function(){
 
                 }else if(dataobj['fields']['discuss_service'] == 'Мегапрорыв'){
 
-                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Megabreakthrough');
+                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : mega breakthrough');
 
                 }else{
                     ga('send', 'event', 'discuss-project', 'click', 'Discuss the project');
