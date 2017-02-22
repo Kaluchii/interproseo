@@ -120,7 +120,7 @@
 
         <div class="form-group">
             <label>Рекомендация</label>
-            <textarea class="form-control text"
+            <textarea class="form-control text-editor"
                       data-name="content"
                       data-type="text"
                       data-block="recommend"
