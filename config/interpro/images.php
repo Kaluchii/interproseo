@@ -8,17 +8,11 @@ return [
     'clients.client_logo'=> [
         'resizes' => ['preview']
     ],
-
-
-    //удалить
-    'quick_start.for_example'=> [
+    'recommend.logo' => [
         'resizes' => ['preview']
     ],
-    'shops_variant.figure'=> [
+    'recommend.photo' => [
         'resizes' => ['preview']
     ],
-
-    //////
-
 
 ];

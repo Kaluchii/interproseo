@@ -28,7 +28,7 @@
             </div>
         </div>
     </footer>
-    <section class="seo-text">
+    {{--<section class="seo-text">
         {!! $all->seo_text_field !!}
-    </section>
+    </section>--}}
 @endsection

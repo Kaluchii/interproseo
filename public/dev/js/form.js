@@ -36,13 +36,11 @@ $(document).ready(function(){
         var error = false;
         $(selector).each(function () {
             $this = $(this);
-
-
             if ( !( $this.val() != '') ){
                 error = true;
                 $this.addClass('error');
             }
-            if ( $this.data('name') == 'email' || $this.data('name') == 'ask_mail' ){
+            if ( $this.data('name') == 'discuss_mail' || ($this.data('name') == 'email' || $this.data('name') == 'ask_mail') ){
                 if (isEmail($this.val())){
                     $this.addClass('error');
                     error = true;
@@ -78,6 +76,22 @@ $(document).ready(function(){
 
             if (!validForm){
                 addFields(selector, dataobj);
+
+                if(dataobj['fields']['discuss_service'] == 'Быстрый старт'){
+
+                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Quick start');
+
+                }else if(dataobj['fields']['discuss_service'] == 'Кампания'){
+
+                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Campaign');
+
+                }else if(dataobj['fields']['discuss_service'] == 'Мегапрорыв'){
+
+                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Megabreakthrough');
+
+                }else{
+                    ga('send', 'event', 'discuss-project', 'click', 'Discuss the project');
+                }
 
                 var deferred = $.ajax(
                     {

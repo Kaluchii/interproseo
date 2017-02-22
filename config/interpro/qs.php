@@ -13,16 +13,6 @@ return [
     ],
 
     'quick_start' => [
-
-
-
-        ////
-        'image' => ['for_example'],
-        'text' => ['example'],
-
-        ////
-
-
         'groups' => [
             'text_left' => [
                 'string' => ['adv_title'],
@@ -55,29 +45,22 @@ return [
     ],
 
     'shops' => [
-
-
-
-        ////
-        'text' => ['descr'],
-
-        ////
-
-
         'groups' => [
             'shops_variant' => [
-
-
-
-                ////
-                'image' => ['figure'],
-
-                ////
-
-
                 'string' => ['cost_with', 'cost_without', 'special_condition', 'spec_cond_color'],
                 'text' => ['descr'],
             ],
         ]
     ],
+
+    'recommendations' => [
+        'groups' => [
+            'recommend' => [
+                'string' => ['r_name', 'profession'],
+                'image'  => ['photo', 'logo'],
+                'text'  => ['content']
+            ]
+        ]
+    ],
+
 ];
