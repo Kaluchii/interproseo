@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:/
+Disallow: /adm
+
+User-agent: Yandex
+Disallow: /adm
+
+Host: http://promotion.interpro.kz
+Sitemap: http://promotion.interpro.kz/sitemap.xml
