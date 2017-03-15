@@ -8,6 +8,9 @@
                     <div class="information-row__discuss">
                         <a href="#discuss" class="link discuss-project">Обсудить проект</a>
                     </div>
+                    <div class="information-row__logo">
+                        <img src="/img/logo.png" alt="ИнтерПро разработка сайтов, SEO" class="information-row__logo-img">
+                    </div>
                     <div class="information-row__phone">{{$all->phone_field}}</div>
                 </div>
             </div>
@@ -60,14 +63,12 @@
                 <ul class="clients__clients-list clients-list">
                     @foreach($client->clients_group as $item)
                         <li class="clients-list__item item">
-                            <div class="item__text-top text-block"><p>Посещения сайта косметологической клиники
-                                    «Медстайл» за 6 месяцев</p></div>
+                            <div class="item__text-top text-block"><p>{!! $item->text_top_field !!}</p></div>
                             <div class="item__picture-wrap"><img src="{{$item->client_logo_field->link}}"
                                                                  alt="{{$item->client_logo_field->alt}}"
                                                                  class="item__picture"></div>
                             <p class="item__description">{!! $item->descr_field !!}</p>
-                            <div class="item__text-bottom text-block"><p>СЕО- продвижение и контекстная реклама в Яндекс
-                                    и Google</p></div>
+                            <div class="item__text-bottom text-block"><p>{!! $item->text_bottom_field !!}</p></div>
                         </li>
                     @endforeach
                 </ul>

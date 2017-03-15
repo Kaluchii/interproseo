@@ -25,7 +25,7 @@
                     <label  class="row-name">
                         Телефон
                     </label>
-                    <input type="text" class="popup-input" data-name="discuss_phone" data-field-type="string" placeholder="Телефон">
+                    <input type="text" class="popup-input" data-name="discuss_phone" data-field-type="string" placeholder="+7 (___) ___-__-__">
                 </div>
             </div>
             <div class="row" style="display: none">

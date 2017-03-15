@@ -24,7 +24,7 @@
             </div>
             <div class="footer__row">
                 <img src="/img/arrow.png" alt="Стрелка" class="footer__img">
-                <p class="footer__p--yellow"><span class="yellow-p">Нужен интернет магазин</span></p>
+                <p class="footer__p--yellow"><span class="yellow-p">Нужен интернет магазин?</span></p>
                 <p class="footer__p">Ознакомьтесь с нашим предложением по разработке <a href="http://shops.interpro.kz/" target="_blank" class="footer__link"><nobr>интернет-магазинов</nobr></a></p>
             </div>
         </div>
