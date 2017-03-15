@@ -59,7 +59,7 @@
 
         <div class="wrap-1200 wrap-1200--clients">
             <div class="clients wrap-1200__clients">
-                <h2 class="clients__block-title block-title block-title--white">Наши клиенты</h2>
+                <h2 class="clients__block-title block-title block-title--white">Результаты клиентов</h2>
                 <ul class="clients__clients-list clients-list">
                     @foreach($client->clients_group as $item)
                         <li class="clients-list__item item">
