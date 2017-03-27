@@ -6,7 +6,7 @@
     @include('front.styles')
     @yield('styles')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" type="image/gif" href="/img/FAV.gif">
+    <link rel="shortcut icon" type="image/gif" href="/img/fav.gif">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
